@@ -103,16 +103,19 @@ button {
     position: absolute;
     right: 35px;
     bottom: 40px;
+    z-index: 1;
 }
 
-button:hover {
-    background-color: hsl(212, 23%, 69%);
-    background-image: url("../images/icon-share-hover.svg");
-    cursor: pointer;
+@media only screen and (min-width: 376px) {
+    button:hover {
+        background-color: hsl(214, 17%, 51%);
+        background-image: url("../images/icon-share-hover.svg");
+        cursor: pointer;
+    }
 }
 
 .button-active {
-    background-color: hsl(212, 23%, 69%);
+    background-color: hsl(214, 17%, 51%);
     background-image: url("../images/icon-share-hover.svg");
 }
 
@@ -130,7 +133,6 @@ button:hover {
     bottom: 100px;
     left: 555px;
     float: left;
-    display: none;
 }
 
 #social-links::before {
